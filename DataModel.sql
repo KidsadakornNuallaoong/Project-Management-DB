@@ -180,7 +180,7 @@ RETURNS TABLE (
     Fund MONEY,
     ProjectName VARCHAR,
     CostTotal MONEY,
-    Progress NUMERIC(10,2)
+    Progress NUMERIC(5,2)
 ) AS $$
 BEGIN
     RETURN QUERY
@@ -209,7 +209,7 @@ RETURNS TABLE (
     Fund MONEY,
     ProjectName VARCHAR,
     CostTotal MONEY,
-    Progress NUMERIC(10,2)
+    Progress NUMERIC(5,2)
 ) AS $$
 BEGIN
     RETURN QUERY
