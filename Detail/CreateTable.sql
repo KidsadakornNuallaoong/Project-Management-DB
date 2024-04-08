@@ -73,7 +73,7 @@ CREATE TABLE Employee (
     Nationality VARCHAR(50) NOT NULL,
     Gender VARCHAR(50) CHECK (Gender IN ('Male', 'Female', 'Trans')) NOT NULL,
     Birthday DATE CHECK (Birthday >= '0001-01-01') NOT NULL,
-    Age INT,
+    Age INT NOT NULL,
     Job VARCHAR(50) NOT NULL,
     Salary MONEY NOT NULL,
     Manager VARCHAR(10) REFERENCES Employee(EID),
